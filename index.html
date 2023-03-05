@@ -8,31 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <h1>Morpion</h1>
+    <button onclick="reset()" id="recommencer">Recommencer</button>
     
     <section>
         <div id="jeu">
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
+            <div class="cell" id="0"></div>
+            <div class="cell" id="1"></div>
+            <div class="cell" id="2"></div>
+            <div class="cell" id="3"></div>
+            <div class="cell" id="4"></div>
+            <div class="cell" id="5"></div>
+            <div class="cell" id="6"></div>
+            <div class="cell" id="7"></div>
+            <div class="cell" id="8"></div>
         </div>
     </section>
 
  <div id="score">
-    <p>C'est au tour du joueur <span id="joueur"></span></p>
+    <p id="joueur"></p>
     <p>Score joueur 1: <span id="joueurScore1">0</span></p>
     <p>Score joueur 2: <span id="joueurScore2">0</span></p>
     <p>Match nul: <span id="matchNuls">0</span></p>
  </div>
 
-    <button id="recommencer">Recommencer</button>
 
 
     <script src="app.js"></script>
